@@ -13,3 +13,8 @@
     width: 100vw;
     height: 800px;
 }
+    #landing-image h1
+    {
+        color: white;
+        font-size: 20%;
+    }
