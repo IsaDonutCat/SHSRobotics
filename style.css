@@ -1,0 +1,15 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none 0;
+}
+
+#landing-image
+{
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("files/tempPhoto.jpeg");
+    width: 100vw;
+    height: 800px;
+}
