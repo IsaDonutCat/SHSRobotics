@@ -4,56 +4,130 @@
     margin: 0;
     padding: 0;
     border: none 0;
+    color: white;
+}
+
+body
+{
+    background-color: rgb(0,0,0);
+    padding-bottom: 10vh;
 }
 
 #landing-image
 {
     object-fit: cover;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("files/tempPhoto.jpg");
-    width: 100vw;
-    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 600px;
+    margin-top: 0;
 }
-    #landing-image h1
+    #landing-text
     {
         color: white;
         font-size: 200px;
         display: flex;
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         align-items:center;
         justify-content: space-evenly;
+    }
+    #landing-cover
+    {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        width: 1005;
+        height: 600px;
+        margin: 0;
+        background: rgba(0,0,0,0);
+        transition: all 1s ease-in-out;
     }
 
 navbar 
 {
     position: fixed;
-    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 5%;
+    flex-flow: row;
+    background: rgba(1, 38, 88,0);
+    transition: all 1s ease-in-out;
 }
-    navbar button
+
+    navbar a
     {
-        color: white;
-        background: none;
-        font-size: 30px;
-        width: max-content;
+        padding: 2%;
         height: 100%;
-        width: 100%;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        text-decoration: none;
+        transition: all 1s ease-in-out;
     }
-    navbar button:hover
-    {
-        background: rgba(255,255,255,0.25);
-    }
+        navbar a:first-of-type
+        {
+            padding-right: 4%;
+        }
+        navbar a:last-of-type
+        {
+            padding-left: 4%;
+        }
+        navbar a:hover
+        {
+            background: rgba(134, 169, 217,0.5);
+        }
+        navbar a button
+        {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            font-family:serif;
+            color: white;
+            background: none;
+            font-size: 30px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
     
 hr
 {
     border: solid 1px;
+    margin-right: 30vw;
+    margin-top: 0;
 }
 
-div
+#bodyText
 {
-    margin: 5vh 0;
+    padding: 0 2vw;
+    width: 100%;
 }
+
+    #bodyText div
+    {
+        margin: 2vh 0;
+    }
+        #bodyText div h1
+        {
+            margin-bottom: 0;
+            font-size: 48px;
+        }
+    #bodyText p,div
+    {
+        margin: 2vh 0;
+        font-size: 24px;
+    }
+    #bodyText a:hover
+    {
+        color: rgb(200,200,200);
+    }
