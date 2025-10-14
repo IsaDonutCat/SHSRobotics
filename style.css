@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: "Cravend";
+    src: url("./files/Cravend.woff");
+}
+
 * 
 {
     box-sizing: border-box;
@@ -39,6 +45,7 @@ h1
         height: 100%;
         align-items:center;
         justify-content: space-evenly;
+        font-family: "Cravend";
     }
     #landing-cover
     {
