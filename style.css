@@ -13,6 +13,12 @@ body
     padding-bottom: 10vh;
 }
 
+h1
+{
+            margin-bottom: 0;
+            font-size: 48px;
+}
+
 #landing-image
 {
     object-fit: cover;
@@ -117,11 +123,6 @@ hr
     {
         margin: 2vh 0;
     }
-        #bodyText div h1
-        {
-            margin-bottom: 0;
-            font-size: 48px;
-        }
     #bodyText p,div
     {
         margin: 2vh 0;
