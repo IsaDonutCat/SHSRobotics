@@ -38,9 +38,27 @@
 
 
 <script>
+
+        
+
         function loadUpdates()
         {
-                
+                const fetchJson = async () => {
+                try {
+                const data = await fetch("../files/updates.json");
+                const response = await data.json();  
+                } catch (error) {
+                console.log(error);
+                }
+                }
+                console.log("ran function");
+                const obj = JSON.parse(fetchJson);
+                console.log("parsed object");
+                for (let i in obj.updates) 
+                {
+                        var div = document.createElement("div");
+
+                }
         }
 </script>
 </body>
