@@ -1,12 +1,24 @@
 <html>
 <head><title>chat01</title></head>
 <body>
-<h1>you are logged in as danny beyerbach</h1>
+<h1>you are logged in as A USER; select the user below.</h1>
 <br>
 <h2>Please enter your message to send below</h2>
 <br>
 <form action="formHandler.php" method="POST">
 <textarea name="query"></textarea>
+<br><br>
+<input type="radio" id="1" name="User" value="1">
+<label for="1">Danny (1)</label>
+<input type="radio" id="2" name="User" value="2">
+<label for="2">ADAM SCHAEFRE (2)</label>
+<input type="radio" id="3" name="User" value="3">
+<label for="3">jasper burroughs (3)</label>
+<br><p>Please select your destination channel for this message.</p>
+<input type="radio" id="a" name="Channel" value="a">
+<label for="a">#general</label>
+<input type="radio" id="b" name="Channel" value="b">
+<label for="b">#team-leadership-council</label>
 <br><br>
 <input type="submit">
 </form>
